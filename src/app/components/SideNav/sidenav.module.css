@@ -1,0 +1,33 @@
+.sideNav {
+  width: 200px;
+  height: calc(100vh - 60px);
+  background-color: rgb(138, 138, 255);
+  position: fixed;
+  left: 0;
+  top: 60px;
+  z-index: 99;
+  overflow-y: auto;
+}
+.sideNav button {
+  border-bottom: 1px solid white;
+  color: white;
+  width: 100%;
+  padding: 30px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.sideNav button:hover {
+  background-color: rgb(96, 96, 249);
+  color: yellow;
+}
+.sideNav li {
+  list-style: none;
+}
+
+.active {
+  background-color: rgb(96, 96, 249);
+  color: yellow !important;
+  text-decoration: underline;
+}

@@ -3,8 +3,8 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div>
-      <h1> Habbit Tracker.</h1>
+    <div className={styles.dashBoardContainer}>
+      <h1> Habbit Tracker</h1>
     </div>
   );
 }
