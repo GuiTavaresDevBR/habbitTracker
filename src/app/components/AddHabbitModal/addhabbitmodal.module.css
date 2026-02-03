@@ -24,11 +24,9 @@
 .addHabbitModalContainer input {
   width: 100%;
   padding: 10px;
-  margin-top: 10px;
   border: 1px solid gray;
   border-radius: 5px;
   outline: none;
-  margin-bottom: 20px;
 }
 
 .addHabbitModalContainer h2 {
@@ -73,4 +71,64 @@
 }
 .rmvButton:hover {
   background-color: #ba2c1d;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: gray;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.textareaContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: gray;
+  margin-bottom: 20px;
+}
+.textareaContainer textarea {
+  min-height: 100px;
+  height: 100px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+}
+
+.frenquencyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 5px;
+}
+
+.frenquencyContainer p {
+  color: gray;
+}
+
+.frenquencyContainer select {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.frenquencyContainer select option {
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 16px;
 }

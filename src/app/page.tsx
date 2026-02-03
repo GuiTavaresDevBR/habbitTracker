@@ -10,17 +10,26 @@ export default function Home() {
     setIsModalOpen(false);
   }
 
+  function handleAddHabbit() {
+    // Lógica para adicionar o hábito
+    setIsModalOpen(false);
+  }
+
   return (
     <>
       <div className={styles.dashBoardContainer}>
         <h1> Meus hábitos Dashboard:</h1>
         <p> Você ainda não tem hábitos cadastrados.</p>
         <button onClick={() => setIsModalOpen(true)}>
-          {" "}
-          + Adicionar Novo Hábito{" "}
+          + Adicionar Novo Hábito
         </button>
       </div>
-      {isModalOpen && <AddHabbitModal onClose={handleCloseModal} />}
+      {isModalOpen && (
+        <AddHabbitModal
+          onClose={handleCloseModal}
+          onAddHabbit={handleAddHabbit}
+        />
+      )}
     </>
   );
 }
