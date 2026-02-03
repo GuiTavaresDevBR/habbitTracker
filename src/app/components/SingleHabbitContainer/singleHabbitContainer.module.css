@@ -18,6 +18,15 @@
 
 .singleHabbitContainer div p {
   font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+
+.singleHabbitContainer div span {
+  font-size: 18px;
+  color: black;
+  font-weight: bolder;
+  padding-left: 10px;
 }
 .singleHabbitContainer footer {
   height: 60px;

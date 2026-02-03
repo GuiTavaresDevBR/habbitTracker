@@ -29,6 +29,13 @@ export default function Home() {
     setIsModalOpen(false);
   }
 
+  function handleDeleteHabbit(habbitId: string) {
+    const updatedHabbitsList = habitsList.filter(
+      (habbit) => habbit.id !== habbitId,
+    );
+    setHabbitsList(updatedHabbitsList);
+  }
+
   return (
     <>
       <div className={styles.dashBoardContainer}>
@@ -39,7 +46,9 @@ export default function Home() {
           </button>
         </header>
         <div className={styles.habbitsContainer}>
-          <p> Nao há habitos cadastrados</p>
+          {habitsList.length === 0 ? <p> Não há Hábitos a serem Exibidos.</p> : habitsList.map(habbit => (
+            <SingleHabbitContainer key={habbit.id} habbit={habbit} onDelete={handleDeleteHabbit} />
+          ))}
         </div>
       </div>
       {isModalOpen && (
