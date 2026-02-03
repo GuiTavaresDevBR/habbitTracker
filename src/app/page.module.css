@@ -1,6 +1,30 @@
 .dashBoardContainer {
   display: flex;
+  flex-direction: column;
   width: 100%;
   align-items: center;
   justify-content: center;
+  gap: 40px;
+}
+
+.dashBoardContainer h1 {
+  border-bottom: 4px solid yellow;
+}
+
+.dashBoardContainer p {
+  font-size: 20px;
+  color: gray;
+}
+
+.dashBoardContainer button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: rgb(96, 96, 249);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.dashBoardContainer button:hover {
+  background-color: rgb(138, 138, 255);
 }

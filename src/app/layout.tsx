@@ -28,9 +28,17 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Header />
-        <div style={{ display: 'flex', flex: 1, marginTop: '60px', height: 'calc(100vh - 60px)', overflow: 'hidden' }}>
+        <div
+          style={{
+            display: "flex",
+            flex: 1,
+            marginTop: "60px",
+            height: "calc(100vh - 60px)",
+            overflow: "hidden",
+          }}
+        >
           <SideNav />
-          <main style={{ flex: 1, marginLeft: '200px', overflow: 'auto', padding: '20px' }}>
+          <main style={{ flex: 1, marginLeft: "200px", overflow: "auto" }}>
             {children}
           </main>
         </div>
