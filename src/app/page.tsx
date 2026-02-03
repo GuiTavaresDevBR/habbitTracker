@@ -3,7 +3,7 @@ import styles from "./page.module.css";
 import AddHabbitModal from "./components/AddHabbitModal/addHabbitModal";
 import { useState } from "react";
 import { HabbitType } from "./types/habbitType";
-import { create } from "domain";
+import SingleHabbitContainer from "./components/SingleHabbitContainer/singleHabbitContainer";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -32,14 +32,15 @@ export default function Home() {
   return (
     <>
       <div className={styles.dashBoardContainer}>
-        <h1> Meus hábitos Dashboard:</h1>
-        {habitsList.length === 0 && <p> Nenhum hábito cadastrado. </p>}
-        {habitsList.length > 0 && (
-          <p> Voce tem {habitsList.length} hábitos cadastrados.</p>
-        )}
-        <button onClick={() => setIsModalOpen(true)}>
-          + Adicionar Novo Hábito
-        </button>
+        <header>
+          <h2> Meus Hábitos: {habitsList.length} </h2>
+          <button onClick={() => setIsModalOpen(true)}>
+            + Adicionar Novo Hábito
+          </button>
+        </header>
+        <div className={styles.habbitsContainer}>
+          <p> Nao há habitos cadastrados</p>
+        </div>
       </div>
       {isModalOpen && (
         <AddHabbitModal

@@ -1,0 +1,36 @@
+.singleHabbitContainer {
+  width: 400px;
+  height: 300px;
+  box-shadow: 2px 2px 2px rgb(36, 36, 36);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.singleHabbitContainer header {
+  height: 60px;
+}
+.singleHabbitContainer div {
+  padding: 10px;
+  flex: 1;
+}
+
+.singleHabbitContainer div p {
+  font-size: 16px;
+}
+.singleHabbitContainer footer {
+  height: 60px;
+  border-top: 1px solid gray;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.singleHabbitContainer footer button {
+  background-color: blue;
+  font-size: 14px;
+  background-color: transparent;
+  color: black;
+}

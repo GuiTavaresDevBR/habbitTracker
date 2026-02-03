@@ -3,16 +3,30 @@
   flex-direction: column;
   width: 100%;
   align-items: center;
-  justify-content: center;
+
   gap: 40px;
+  background-color: rgb(232, 232, 232);
+  min-height: 100%;
 }
 
-.dashBoardContainer h1 {
-  border-bottom: 4px solid yellow;
+.dashBoardContainer header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+  padding: 20px;
+  width: 100%;
+  border-bottom: 2px solid gray;
+}
+
+.dashBoardContainer header h2 {
+  font-size: 28px;
+  color: gray;
 }
 
 .dashBoardContainer p {
-  font-size: 20px;
+  font-size: 25px;
+  text-decoration: underline;
   color: gray;
 }
 
@@ -27,4 +41,14 @@
 }
 .dashBoardContainer button:hover {
   background-color: rgb(138, 138, 255);
+}
+
+.habbitsContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: center;
 }
